@@ -610,28 +610,23 @@ body::-webkit-scrollbar {
 .G-letter {
     width: 300px;
     height: 300px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-
     margin-left: 100px;
     margin-top: 30px;
 
-    color: white;
+}
 
+#gletter{
+    width: 400px;
+    height: 400px;
+    margin-left: 15px;
     border-radius: 50%;
-
-    box-shadow: 1px 1px 20px 1px turquoise;
 }
 
-#g-letter {
-    font-size: 300px;
 
-    margin-right: 25px;
-    margin-bottom: 40px;
-}
 
 .comment {
     width: 500px;
