@@ -934,3 +934,773 @@ body::-webkit-scrollbar {
 .contact-section.contact-show .icons-box #hover:nth-child(4) {
     transition-delay: 1.3s;
 }
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+
+/* =========================================
+   TABLET + SMALL LAPTOP
+   769px -> 1100px
+========================================= */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
+
+    .nav {
+        width: 70%;
+        margin-right: -20px;
+
+        display: flex;
+        flex-wrap: nowrap !important;
+
+        white-space: nowrap;
+    }
+
+    .nav-link {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+
+
+    /* ---------- HOME ---------- */
+
+    .section {
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    .content {
+        width: 55%;
+    }
+
+    .img2 {
+        width: 45%;
+    }
+
+    #imge {
+        width: min(400px, 100%);
+        height: auto;
+        margin-top: 0;
+    }
+
+    #span {
+        font-size: clamp(35px, 5vw, 50px);
+    }
+
+    #span2 {
+        font-size: 17px;
+    }
+
+    .btn1 {
+        margin-right: 20px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    #part1 {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 25px;
+    }
+
+    .aboutMe {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .age,
+    .location,
+    .skills,
+    .contact {
+        width: calc(25% - 20px);
+        min-width: 150px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .myBrojects {
+        width: auto;
+        margin-left: 30px;
+    }
+
+    #part2 {
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 0 25px;
+    }
+
+    #part2 > div {
+        width: calc(50% - 20px);
+    }
+
+    .photos {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .width {
+        width: 100%;
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    #computer {
+        width: 35vw;
+        height: 100vh;
+    }
+
+    .section-services {
+        width: 55%;
+        margin-right: 30px;
+    }
+
+    .shadow {
+        width: 100%;
+    }
+
+    .section-services .shadow:nth-child(2),
+    .section-services .shadow:nth-child(4) {
+        transform: translateX(70px);
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-section {
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    .contact-left {
+        width: 40%;
+    }
+
+    .contact-right {
+        width: 60%;
+        margin-right: 0;
+    }
+
+    .G-letter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gletter {
+        width: 320px;
+        height: 320px;
+        margin-left: 0;
+    }
+
+    .comment {
+        width: 100%;
+    }
+
+    .icons-box {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .contact-text {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .contact-text h2 {
+        font-size: clamp(55px, 7vw, 80px);
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   0px -> 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 35px !important;
+    }
+
+    .menuBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 35px;
+        height: 25px;
+
+        padding: 0;
+
+        background: transparent;
+        border: none;
+
+        cursor: pointer;
+
+        z-index: 1001;
+    }
+
+    .menuBtn span {
+        display: block;
+
+        width: 100%;
+        height: 3px;
+
+        background-color: white;
+        border-radius: 10px;
+
+        transition: 0.3s;
+    }
+
+    .nav {
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        width: 75%;
+        height: 100vh;
+
+        margin: 0;
+
+        padding-top: 100px;
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: center;
+
+        border-radius: 0;
+
+        z-index: 1000;
+
+        transform: translateX(100%);
+    }
+
+    .nav-link {
+        width: 100%;
+
+        padding: 15px !important;
+
+        text-align: center;
+
+        font-size: 20px;
+    }
+
+
+    /* ---------- HOME ---------- */
+
+    .section {
+        width: 100% !important;
+
+        margin-top: 70px;
+
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column-reverse;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+    .content,
+    .img2 {
+        width: 100%;
+    }
+
+    #imge {
+        width: min(330px, 85vw);
+        height: auto;
+
+        margin: 0 auto;
+    }
+
+    #span {
+        font-size: clamp(30px, 9vw, 45px);
+    }
+
+    #span2 {
+        display: block;
+
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn1 {
+        margin-right: 10px;
+    }
+
+    .icons span {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    #part1 {
+        width: 100% !important;
+
+        padding: 0 20px;
+
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .aboutMe {
+        width: 100%;
+
+        grid-column: 1 / -1;
+
+        margin: 0;
+    }
+
+    .paragragh {
+        height: auto;
+        max-height: 190px;
+    }
+
+    .age,
+    .location,
+    .skills,
+    .contact {
+        width: 100%;
+        height: 240px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .myBrojects {
+        width: auto;
+
+        margin: 40px 20px 25px;
+
+        font-size: 32px;
+    }
+
+    #part2 {
+        width: 100% !important;
+
+        padding: 0 20px;
+
+        display: grid !important;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    #part2 > div {
+        width: 100%;
+    }
+
+    .photos {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+
+        object-fit: cover;
+    }
+
+    .width {
+        width: 100%;
+    }
+
+
+    /* ---------- IMAGE OVERLAY ---------- */
+
+    #bigImage {
+        max-width: 92%;
+        max-height: 80vh;
+    }
+
+    #closeBtn {
+        top: 10px;
+        right: 20px;
+
+        font-size: 40px;
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    #services {
+        width: 90%;
+
+        margin: 60px auto 20px !important;
+
+        text-align: center;
+
+        font-size: 35px !important;
+    }
+
+    .bigBox {
+        width: 100%;
+
+        padding: 0 20px;
+
+        margin-top: 30px;
+
+        display: flex !important;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    #computer {
+        width: 100%;
+        height: 300px;
+
+        margin-bottom: 30px;
+
+        object-fit: cover;
+    }
+
+    .section-services {
+        width: 100%;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shadow {
+        width: 100%;
+
+        padding: 15px 10px;
+    }
+
+    .section-services .shadow:nth-child(2),
+    .section-services .shadow:nth-child(4) {
+        transform: none;
+    }
+
+    .shadow:hover {
+        transform: scale(1.03);
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-section {
+        width: 100%;
+
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+
+        margin: 0;
+    }
+
+    .G-letter {
+        width: 100%;
+        height: auto;
+
+        margin: 30px auto 0;
+    }
+
+    #gletter {
+        width: min(300px, 80vw);
+        height: auto;
+
+        margin: 0;
+    }
+
+    .comment {
+        width: 100%;
+        margin-top: 20px;
+
+        text-align: center;
+    }
+
+    .icons-box {
+        width: 100%;
+
+        margin: 30px 0 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 150px));
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    #hover {
+        width: 100%;
+        max-width: 150px;
+        height: 130px;
+
+        margin: 0;
+    }
+
+    .contact-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-text {
+        width: 100%;
+
+        margin: 0 0 40px;
+
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: clamp(45px, 11vw, 75px);
+        line-height: 1.15;
+    }
+
+    .contact-form {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+
+        padding: 25px 15px 30px;
+    }
+
+    .contact-form button {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   0px -> 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .logo {
+        font-size: 30px !important;
+    }
+
+    .nav {
+        width: 85%;
+    }
+
+
+    /* ---------- HOME ---------- */
+
+    .section {
+        padding: 0 15px;
+        gap: 35px;
+    }
+
+    #imge {
+        width: min(280px, 85vw);
+    }
+
+    #span {
+        font-size: 30px;
+    }
+
+    #span2 {
+        font-size: 14px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 90px;
+    }
+
+    .icons span {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    #part1 {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutMe {
+        grid-column: auto;
+    }
+
+    .age,
+    .location,
+    .skills,
+    .contact {
+        height: 220px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .myBrojects {
+        font-size: 28px;
+    }
+
+    .width p {
+        font-size: 13px;
+    }
+
+    .dimo-link {
+        width: 90px;
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    #services {
+        font-size: 30px !important;
+    }
+
+    #computer {
+        height: 250px;
+    }
+
+    .shadow {
+        font-size: 14px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    #contactUUs {
+        width: 90%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    #gletter {
+        width: min(260px, 80vw);
+    }
+
+    .icons-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #hover {
+        width: 100%;
+        height: 120px;
+    }
+
+    #hover ion-icon {
+        font-size: 40px;
+    }
+
+    .contact-text h2 {
+        font-size: 42px;
+    }
+
+    .contact-form {
+        padding: 20px 12px 25px;
+    }
+
+    .contact-form h3 {
+        font-size: 20px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   0px -> 360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    .logo {
+        font-size: 27px !important;
+    }
+
+    #imge {
+        width: 250px;
+    }
+
+    #span {
+        font-size: 27px;
+    }
+
+    #span2 {
+        font-size: 13px;
+    }
+
+    .bttn {
+        margin: 4px;
+    }
+
+    .icons span {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .contact-text h2 {
+        font-size: 36px;
+    }
+
+    #hover {
+        height: 110px;
+    }
+}
