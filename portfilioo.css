@@ -47,13 +47,6 @@ body::-webkit-scrollbar {
     animation: navbar 3s ease-out forwards;
 }
 
-    .menuBtn {
-        display: none !important;
-    }
-
-   #menuBtn{
-      display: none !important
-   }
 
 @keyframes navbar {
     from {
@@ -963,9 +956,6 @@ body::-webkit-scrollbar {
         display: none !important;
     }
 
-   #menuBtn{
-      display: none !important
-   }
 
 
     /* =========================
@@ -1428,6 +1418,10 @@ body::-webkit-scrollbar {
     }
 
     /* Hamburger */
+
+       .menuBtn {
+        display: flex !important;
+    }
 
     .menuBtn {
         width: 42px;
