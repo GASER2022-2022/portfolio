@@ -957,6 +957,10 @@ body::-webkit-scrollbar {
         display: none !important;
     }
 
+   #menuBtn{
+      display: none !important
+   }
+
 
     /* =========================
        CONTACT
@@ -1100,6 +1104,10 @@ body::-webkit-scrollbar {
     .menuBtn {
         display: none !important;
     }
+
+   #menuBtn{
+      display: none !important
+   }
 
 
     /* =========================
