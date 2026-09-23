@@ -41,13 +41,19 @@ body::-webkit-scrollbar {
     border-radius: 50px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-
     width: 60%;
     margin-right: -30px;
-
     transform: translateX(1000px);
     animation: navbar 3s ease-out forwards;
 }
+
+    .menuBtn {
+        display: none !important;
+    }
+
+   #menuBtn{
+      display: none !important
+   }
 
 @keyframes navbar {
     from {
