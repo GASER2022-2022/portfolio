@@ -704,7 +704,7 @@ body::-webkit-scrollbar {
     width: 500px;
 
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
 
     display: flex;
     flex-direction: column;
