@@ -305,7 +305,7 @@ contactForm.addEventListener("submit", function (e) {
     const message = document.getElementById("message").value.trim();
 
     const whatsappMessage =
-        "New message from my portfolio\n\n" +
+        "New message from your portfolio\n\n" +
         "Name: " + name + "\n" +
         "Email: " + email + "\n" +
         "Number: " + number + "\n\n" +
