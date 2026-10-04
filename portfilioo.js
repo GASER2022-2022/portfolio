@@ -316,5 +316,6 @@ contactForm.addEventListener("submit", function (e) {
         encodeURIComponent(whatsappMessage);
 
     window.open(whatsappURL, "_blank");
+    contactForm.reset();
 
 });
